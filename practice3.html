@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #grid{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            background-color: silver;
+            font-size: 30px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        #grid>#one{ 
+            grid-column: 1 / 5;
+            grid-row: 1;
+            background-color: #c0d4e4;
+        }
+        #grid>#two{ 
+            grid-column: 1 / 2;
+            grid-row: 2 / 5;
+            background-color: #d98783;
+        }
+        #grid>#three{ 
+            grid-column: 2 / 4;
+            grid-row: 2 / 5;
+            background-color: #b0ec9c;
+        }
+        #grid>#four{ 
+            grid-column: 4;
+            grid-row: 2 / 5;
+            background-color: #fffcd4;
+        }
+        #grid>#five{ 
+            grid-column: 1/5;
+            grid-row: 5;
+            background-color: #f0bcc4;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div id="one">Header</div>
+        <div id="two">Navbar</div>
+        <div id="three">Main</div>
+        <div id="four">Aside</div>
+        <div id="five">Footer</div>
+    </div>
+</body>
+</html>
